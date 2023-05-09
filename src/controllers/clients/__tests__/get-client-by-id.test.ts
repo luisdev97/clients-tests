@@ -2,10 +2,9 @@ import { expect } from "chai";
 import { agent } from "supertest";
 import { getRepository, Connection, Repository } from "typeorm";
 
-import { dbCreateConnection } from "orm/dbCreateConnection";
-import { Client } from "orm/entities/Client/Client.entity";
-
 import { app } from "../../..";
+import { dbCreateConnection } from "../../../orm/dbCreateConnection";
+import { Client } from "../../../orm/entities/Client/Client.entity";
 import { getDBFixture } from "../../../utils/test-db-fixutre/get-test-db-fixture";
 
 import "mocha";
