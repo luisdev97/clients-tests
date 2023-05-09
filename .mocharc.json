@@ -1,5 +1,5 @@
 {
-    "spec": "src/**/__tests__/*.test.ts",
-    "watch-files": ["src/**/__tests__/*.test.ts"],
-    "ignore": ["node_modules", ".vscode"]
+  "spec": "src/**/__tests__/*.test.ts",
+  "watch-files": ["src/**/__tests__/*.test.ts"],
+  "ignore": ["node_modules", ".vscode"]
 }

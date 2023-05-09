@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple REST API with Typescript, TypeORM, ExpressJs & Mocha.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "debug=* NODE_PATH=./src ts-node-dev --respawn ./src/index.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
