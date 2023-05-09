@@ -1,11 +1,13 @@
 import { Router } from "express";
 
-import auth from "./auth";
-import clients from "./clients";
+import authRoutes from "./auth";
+import clientsRoutes from "./clients";
+import policiesRoutes from "./policies";
 
 const router = Router();
 
-router.use("/auth", auth);
-router.use("/clients", clients);
+router.use("/auth", authRoutes);
+router.use("/clients", clientsRoutes);
+router.use("/policies", policiesRoutes);
 
 export default router;
