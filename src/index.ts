@@ -9,6 +9,8 @@ import express, { Request, Response } from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 
+import { dbCreateConnection } from "orm/dbCreateConnection";
+
 export const app = express();
 app.use(cors());
 app.use(helmet());
@@ -28,7 +30,7 @@ try {
 }
 app.use(morgan("combined"));
 
-const port = process.env.PORT || 4000;
+const port = process.env.API_PORT || 6000;
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World");
@@ -37,3 +39,7 @@ app.get("/", (req: Request, res: Response) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+(async () => {
+  await dbCreateConnection();
+})();
