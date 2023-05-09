@@ -1,4 +1,7 @@
 import { Request, Response, NextFunction } from "express";
+import { getRepository } from "typeorm";
+
+import { Client as ClientEntity } from "../../orm/entities/Client/Client.entity";
 
 export const getClientById = async (
   req: Request,
@@ -6,5 +9,7 @@ export const getClientById = async (
   next: NextFunction
 ) => {
   const id = req.params.id;
-  res.send("valele");
+  const clientRepository = getRepository(ClientEntity);
+  const client = await clientRepository.findOne(id);
+  res.customSuccess(200, "Client found.", client);
 };
