@@ -9,7 +9,8 @@ import express, { Request, Response } from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 
-import { dbCreateConnection } from "orm/dbCreateConnection";
+import { dbCreateConnection } from "./orm/dbCreateConnection";
+import routes from "./routes";
 
 export const app = express();
 app.use(cors());
@@ -29,6 +30,8 @@ try {
   console.log(err);
 }
 app.use(morgan("combined"));
+
+app.use("/", routes);
 
 const port = process.env.API_PORT || 6000;
 
