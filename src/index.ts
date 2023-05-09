@@ -9,6 +9,7 @@ import express, { Request, Response } from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 
+import "./utils/response/customSuccess";
 import { dbCreateConnection } from "./orm/dbCreateConnection";
 import routes from "./routes";
 
