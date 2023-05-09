@@ -10,6 +10,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 
 import "./utils/response/customSuccess";
+import { errorHandler } from "./middleware";
 import { dbCreateConnection } from "./orm/dbCreateConnection";
 import routes from "./routes";
 
@@ -33,6 +34,8 @@ try {
 app.use(morgan("combined"));
 
 app.use("/", routes);
+
+app.use(errorHandler);
 
 const port = process.env.API_PORT || 6000;
 
