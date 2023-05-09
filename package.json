@@ -15,7 +15,7 @@
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.1.6",
-    "typeorm": "^0.3.15",
+    "typeorm": "^0.2.45",
     "typeorm-naming-strategies": "^4.0.0",
     "validator": "^13.7.0"
   },
