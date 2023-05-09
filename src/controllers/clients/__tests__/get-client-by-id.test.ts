@@ -4,8 +4,8 @@ import { getRepository, Connection, Repository } from "typeorm";
 
 import { app } from "../../..";
 import { dbCreateConnection } from "../../../orm/dbCreateConnection";
-import { Client } from "../../../orm/entities/Client/Client.entity";
-import { getDBFixture } from "../../../utils/test-db-fixutre/get-test-db-fixture";
+import { Client } from "../../../orm/entities";
+import { getDBFixture } from "../../../utils";
 
 import "mocha";
 

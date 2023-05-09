@@ -1,7 +1,6 @@
 import { Router } from "express";
 
-import { getClientById } from "../../controllers/clients";
-import { getClientByName } from "../../controllers/clients/get-client-by-name";
+import { getClientById, getClientByName } from "../../controllers";
 
 const router = Router();
 

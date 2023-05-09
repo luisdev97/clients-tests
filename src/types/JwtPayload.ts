@@ -1,4 +1,4 @@
-import { Role } from "../orm/entities/Client/types";
+import { Role } from "../orm/entities";
 
 export type JwtPayload = {
   id: string;

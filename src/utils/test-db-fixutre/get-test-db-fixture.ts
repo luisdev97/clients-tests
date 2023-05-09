@@ -1,6 +1,4 @@
-import { Client } from "orm/entities/Client/Client.entity";
-import { Role } from "orm/entities/Client/types";
-import { Policy } from "orm/entities/Policy/Policy.entity";
+import { Client, Role, Policy } from "../../orm/entities";
 
 export function getDBFixture() {
   const basicClient = new Client();

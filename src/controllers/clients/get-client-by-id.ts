@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import { getRepository } from "typeorm";
 
-import { Client as ClientEntity } from "../../orm/entities/Client/Client.entity";
-import { CustomError } from "../../utils/response/custom-error/custom-error";
+import { Client as ClientEntity } from "../../orm/entities";
+import { CustomError } from "../../utils";
 
 export const getClientById = async (
   req: Request,
