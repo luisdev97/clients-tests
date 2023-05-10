@@ -81,17 +81,17 @@ $ npm run test:e2e
 
 
 ### Considerations
-- Basado en mi interpretación he deducido que los clientes ofrecidos por el mock, son así mismos los propios usuarios de la aplicación, ya que poseen el campo role.
+- Based on my interpretation, I have deduced that the clients offered by the mock are the users of the application themselves, since they have the role field.
 
-- En caso de querer probar la API más allá de los test, he insertado dos usuarios en la base de datos con contraseña y cada uno con un rol diferente para probar el middleware de checkRole.
+- In case you want to test the API beyond the tests, I have inserted two users in the database with a password and each one with a different role to test the checkRole middleware.
 ```typescript
 const users  = [
     {
-        email: luisdavid@user.com
+        email: luisdavid@user.com,
         pass: simple_user_key
     },
     {
-        email: luisdavid@admin.com
+        email: luisdavid@admin.com,
         pass: simple_admin_key
     }
 ]
