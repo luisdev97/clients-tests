@@ -1,5 +1,9 @@
 # Capgemini Test
 
+<p align="center">
+  <img src="https://w7.pngwing.com/pngs/212/722/png-transparent-web-development-express-js-javascript-software-framework-laravel-world-wide-web-purple-blue-text.png" width="600" alt="Express Logo" />
+</p>
+
 ## About the project
 Little clients and policies API for a technical test.
 
@@ -35,7 +39,7 @@ We start by installing the dependencies
 $ npm install
 ```
 
-Secondly, we create the .env file for the project configuration, I leave a sample configuration.
+Secondly, we create the .env file for the project configuration(just rename .env.example file), I leave a sample configuration.
 
 ```bash
 NODE_ENV=dev
@@ -60,3 +64,35 @@ Finally, we need to pull up the database, including the data we will get from th
 ```
 $ docker-compose up -d
 ```
+
+### Running the app
+```bash
+#development mode:
+$ npm run dev
+```
+
+
+### Test
+
+```bash
+# e2e tests
+$ npm run test:e2e
+```
+
+
+### Considerations
+- Basado en mi interpretación he deducido que los clientes ofrecidos por el mock, son así mismos los propios usuarios de la aplicación, ya que poseen el campo role.
+
+- En caso de querer probar la API más allá de los test, he insertado dos usuarios en la base de datos con contraseña y cada uno con un rol diferente para probar el middleware de checkRole.
+```typescript
+const users  = [
+    {
+        email: luisdavid@user.com
+        pass: simple_user_key
+    },
+    {
+        email: luisdavid@admin.com
+        pass: simple_admin_key
+    }
+]
+``
