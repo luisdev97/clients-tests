@@ -60,7 +60,8 @@ API_PORT=4065
 
 Finally, we need to pull up the database, including the data we will get from the test .sql seed.
 **If your current user does not have permissions to interact with containers using docker-compose you will need to check this.** 
-[Am example about how to do it](https://phoenixnap.com/kb/docker-permission-denied)
+
+[An example about how to do it](https://phoenixnap.com/kb/docker-permission-denied)
 
 ```
 $ docker-compose up -d
