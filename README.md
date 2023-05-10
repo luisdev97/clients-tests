@@ -97,4 +97,7 @@ const users  = [
         pass: simple_admin_key
     }
 ]
-``
+```
+
+## Stay in touch
+- [Author LinkedIn](https://www.linkedin.com/in/luis-david-amador-montoro)
