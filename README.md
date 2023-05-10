@@ -78,7 +78,7 @@ $ npm run dev
 
 ```bash
 # e2e tests
-$ npm run test:e2e
+$ npm run test
 ```
 
 
