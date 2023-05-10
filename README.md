@@ -1,4 +1,4 @@
-# Capgemini Test
+# Technical Test
 
 <p align="center">
   <img src="https://w7.pngwing.com/pngs/212/722/png-transparent-web-development-express-js-javascript-software-framework-laravel-world-wide-web-purple-blue-text.png" width="600" alt="Express Logo" />
